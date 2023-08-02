@@ -12,11 +12,11 @@ services:
       --docs
       --api-only
       --no-download
-      --no-half
-      --skip-requirements
-      --skip-extensions
-      --skip-git
-      --skip-torch
+    # --no-half
+    # --skip-requirements
+    # --skip-extensions
+    # --skip-git
+    # --skip-torch
     # --xformers
     # --no-half-vae
     deploy:

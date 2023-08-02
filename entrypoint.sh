@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
-source $INSTALLDIR/venv/bin/activate
+# source $INSTALLDIR/venv/bin/activate
 
 # Ensure that --data-dir is set
 if [ -z $DATA_DIR ]; then
