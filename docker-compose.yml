@@ -12,9 +12,10 @@ services:
       --docs
       --api-only
       --no-download
+      --skip-extensions
     # --no-half
     # --skip-requirements
-    # --skip-extensions
+    
     # --skip-git
     # --skip-torch
     # --xformers
