@@ -27,7 +27,7 @@ services:
               capabilities: [gpu]
     environment:
       DATA_DIR: "./data"
-    image: ${REGISTRY:-saladtechnologies}/sdnext:extensions
+    image: ${REGISTRY:-saladtechnologies}/sdnext:latest
     ports:
       - "7860:7860"
     stdin_open: true
