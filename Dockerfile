@@ -40,9 +40,7 @@ WORKDIR $INSTALLDIR
 USER root
 
 RUN ${INSTALLDIR}/entrypoint.sh --test \
-    --api-only \
     --no-download \
-    --skip-extensions \
     --skip-torch
 
 

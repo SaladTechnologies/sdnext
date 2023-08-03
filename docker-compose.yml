@@ -10,9 +10,7 @@ services:
     command: |
       --listen
       --docs
-      --api-only
       --no-download
-      --skip-extensions
     # --no-half
     # --skip-requirements
     
@@ -29,7 +27,7 @@ services:
               capabilities: [gpu]
     environment:
       DATA_DIR: "./data"
-    image: ${REGISTRY:-saladtechnologies}/sdnext:latest
+    image: ${REGISTRY:-saladtechnologies}/sdnext:extensions
     ports:
       - "7860:7860"
     stdin_open: true
