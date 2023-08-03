@@ -11,13 +11,6 @@ services:
       --listen
       --docs
       --no-download
-    # --no-half
-    # --skip-requirements
-    
-    # --skip-git
-    # --skip-torch
-    # --xformers
-    # --no-half-vae
     deploy:
       resources:
         reservations:
@@ -25,17 +18,6 @@ services:
             - driver: nvidia
               count: all
               capabilities: [gpu]
-    environment:
-      DATA_DIR: "./data"
-    image: ${REGISTRY:-saladtechnologies}/sdnext:extensions
+    image: ${REGISTRY:-saladtechnologies}/sdnext:latest
     ports:
       - "7860:7860"
-    stdin_open: true
-    tmpfs:
-      - /tmp
-    tty: true
-    volumes:
-      - model-cache:/webui/data
-
-volumes:
-  model-cache:
