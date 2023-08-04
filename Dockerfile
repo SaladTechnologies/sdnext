@@ -46,3 +46,5 @@ RUN ${INSTALLDIR}/entrypoint.sh --test \
 STOPSIGNAL SIGINT
 # In order to pass variables along to Exec Form Bash, we need to copy them explicitly
 ENTRYPOINT ["/bin/bash", "-c", "${INSTALLDIR}/entrypoint.sh \"$0\" \"$@\""]
+
+CMD ["--listen", "--no-download", "--docs"]
